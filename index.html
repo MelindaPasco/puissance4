@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="js/connect4.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+        <h2>Puissance 4</h2>
+
+    <div id="starter">
+        <button id="openForm">Jouer une partie</button>
+
+        <div id="custom">
+            <form>
+                <label>Lignes <span class="specs">(recommandé: 4 à 10)</span></label><br>
+                <input type="text" id="rows" value="5"><br>
+                <label>Colonnes <span class="specs">(recommandé: 4 à 10)</span></label><br>
+                <input type="text" id="cols" value="5"><br><br>
+                <label>Nom du Joueur 1</label>
+                <input type="text" id="j1" value="I'm not a bot"><br>
+                <label>Couleur Joueur 1</label>
+                <input type="text" id="p1" value="#c6b5ed"><br><br>
+                <label>Nom du Joueur 2</label>
+                <input type="text" id="j2" value="Some player name"><br>
+                <label>Couleur Joueur 2</label>
+                <input type="text" id="p2" value="sandybrown">
+            </form>
+            
+            <p>
+                <span class="specs">* La couleur doit être une couleure CSS valide<br>
+                Nom en anglais, Hex code ou Decimal Code (R,G,B)<br>
+                ex: red ou #FF0000 ou rgb(255,0,0)</span>
+            </p>
+
+            <button id="mySets">Lancer</button>
+        </div>
+
+    </div>
+
+    <div id="theGame">
+        <div id="call">C'est au tour de :</div>
+        <div id="turnTrack"><strong>joueur1</strong></div>
+        <div id="board"></div>
+        <br>
+    </div>
+    
+    <div id="buttons">
+        <button id="togRules">Règles</button>
+        <button id="redo">Annuler le dernier</button>
+        <button id="rejouer">Rejouer</button>
+    </div>
+
+    <div id="rules">
+        <h3>Pour gagner une partie de puissance 4:</h3> 
+        <p>
+            Il faut être le premier à <strong>aligner 4 jetons de sa couleur</strong> horizontalement, 
+            verticalement ou diagonalement.
+        </p>
+        <p>
+            Si lors d'une partie, 
+            tous les jetons sont joués sans qu'il y ait d'alignement de jetons, 
+            la partie est déclaré nulle.
+        </p>    
+    </div>
+
+    <div id="history">
+        <h3>Historique des parties:</h3>
+    </div>
+
+</body>
+</html>

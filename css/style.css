@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 44px;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 2px #1e62d0;
+    border-bottom: solid 2px #1e62d0;
+    text-shadow:
+    -1px -1px 0 #1e62d0,  
+    1px -1px 0 #1e62d0,
+    -1px 1px 0 #1e62d0,
+    1px 1px 0 #1e62d0;
+    cursor: pointer;
+}
+
+#starter {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid #1e62d0 1px;
+    border-radius: 5px;
+    width: 375px;
+}
+
+#custom {
+    display: none;
+}
+
+form {
+    padding: 10px;
+}
+
+input {
+    margin-top: 3px;
+}
+
+.specs {
+    color: grey;
+    font-size: small;
+}
+
+#launch {
+    display: none;
+}
+
+#rows, #cols {
+    width: 25px;
+    text-align: center;
+}
+
+#theGame {
+    display: none;
+}
+
+button {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+button:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+#board {
+    display: inline-block;
+    text-align: center;
+    background-color: #3d94f6;
+}
+
+#turnTrack {
+    border: solid 3px black;
+    border-radius: 25px;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 3px;
+}
+
+.col.VIDE {
+    cursor: pointer;
+}
+
+.playerMove {
+    background-color: white;
+    box-shadow: inset 0px 5px 7px 5px #97c4fe
+}
+
+.col.joueur1 {
+    background-color: red;
+    box-shadow: inset 0px -5px 7px 0px black
+}
+
+.col.joueur2 {
+    background-color: yellow;
+    box-shadow: inset 0px -5px 7px 0px black
+}
+
+
+#buttons {
+    display: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#redo {
+    visibility: hidden;
+}
+
+#rules {
+    display: none;
+    margin: auto;
+    border: solid #1e62d0 1px;
+    border-radius: 5px;
+    width: 375px;
+}
+
+#history {
+    display: none;
+}
